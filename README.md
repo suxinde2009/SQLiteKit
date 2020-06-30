@@ -1,2 +1,2 @@
 # SQLiteKit
-A C++ wrapper of Sqlite.
+A C++ wrapper of Sqlite. WIP...
