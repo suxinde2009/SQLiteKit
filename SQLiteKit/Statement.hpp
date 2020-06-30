@@ -25,7 +25,7 @@ struct sqlite3_stmt;
 namespace SQLite {
     
     // Forward declaration
-    class DataBase;
+    class Database;
     class Column;
     
     extern const int OK;
@@ -89,6 +89,50 @@ namespace SQLite {
         
         void bind(const char* apName, const unsigned value);
         
+#if (LONG_MAX == INT_MAX) // sizeof(long)==4 means the data model of the system is ILP32 (32bits OS or Windows 64bits)
+        /**
+         * @brief Bind a 32bits long value to a parameter "?", "?NNN", ":VVV", "@VVV" or "$VVV" in the SQL prepared statement (aIndex >= 1)
+         */
+        void bind(const char* apName, const long value) {
+            bind(apName, static_cast<int>(value));
+        }
+#else // sizeof(long)==8 means the data model of the system is LLP64 (64bits Linux)
+        /**
+         * @brief Bind a 64bits long value to a parameter "?", "?NNN", ":VVV", "@VVV" or "$VVV" in the SQL prepared statement (aIndex >= 1)
+         */
+        void bind(const char* apName, const long value) {
+            bind(apName, static_cast<long long>(value));
+        }
+#endif
+        void bind(const char* apName, const long long value);
+        
+        void bind(const char* apName, const double value);
+        
+        void bind(const char* apName, const std::string& value);
+       
+        void bind(const char* apName, const char* value);
+       
+        void bind(const char* apName, const void* value, const int size);
+       
+        void bindNoCopy(const char* apName, const std::string& value);
+        
+        void bindNoCopy(const char* apName, const char* value);
+        
+        void bindNoCopy(const char* apName, const void* value, const int size);
+        
+        void bind(const char* apName); // bind NULL value
+        
+        inline void bind(const std::string& name, const long long value) {
+            bind(name.c_str(), value);
+        }
+        
+        inline void bind(const std::string& name, const double value) {
+            bind(name.c_str(), value);
+        }
+        
+        
+        
+        
     private:
         class Ptr {
         public:
@@ -106,6 +150,9 @@ namespace SQLite {
             inline operator sqlite3_stmt*() const {
                 return mpStmt;
             }
+            
+        private:
+            Ptr& operator=(const Ptr& ptr);
             
         private:
             sqlite3*        mpSQLite;    //!< Pointer to SQLite Database Connection Handle
@@ -137,8 +184,8 @@ namespace SQLite {
         
         /// Check if there is a Column index is in the range of columns in the result.
         /// @param index index of column to be checked
-        int void checkIndex(const int index) const {
-            if ((aIndex < 0) || (aIndex >= mColumnCount)) {
+        inline void checkIndex(const int index) const {
+            if ((index < 0) || (index >= mColumnCount)) {
                 throw SQLite::Exception("Column index out of range.");
             }
         }
