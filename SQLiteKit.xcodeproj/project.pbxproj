@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1F733D4D24AB1CCE0089167B /* SQLiteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F733D4424AB1CCE0089167B /* SQLiteKit.framework */; };
-		1F733D5224AB1CCE0089167B /* SQLiteKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D5124AB1CCE0089167B /* SQLiteKitTests.m */; };
+		1F733D5224AB1CCE0089167B /* SQLiteKitTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D5124AB1CCE0089167B /* SQLiteKitTests.mm */; };
 		1F733D5F24AB1D390089167B /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D5D24AB1D390089167B /* sqlite3.c */; };
-		1F733D6024AB1D390089167B /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D5E24AB1D390089167B /* sqlite3.h */; };
+		1F733D6024AB1D390089167B /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D5E24AB1D390089167B /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F733D6324AB1D8A0089167B /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D6124AB1D8A0089167B /* Exception.cpp */; };
-		1F733D6424AB1D8A0089167B /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6224AB1D8A0089167B /* Exception.hpp */; };
-		1F733D6824AB1DB60089167B /* SQLiteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6624AB1DB60089167B /* SQLiteKit.h */; };
-		1F733D6C24AB218C0089167B /* NullPtr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6A24AB218C0089167B /* NullPtr.hpp */; };
-		1F733D7024AB23270089167B /* Assertion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6E24AB23270089167B /* Assertion.hpp */; };
+		1F733D6424AB1D8A0089167B /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6224AB1D8A0089167B /* Exception.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F733D6824AB1DB60089167B /* SQLiteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6624AB1DB60089167B /* SQLiteKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F733D6C24AB218C0089167B /* NullPtr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6A24AB218C0089167B /* NullPtr.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F733D7024AB23270089167B /* Assertion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D6E24AB23270089167B /* Assertion.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F733D7324AB25A50089167B /* Column.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D7124AB25A50089167B /* Column.cpp */; };
-		1F733D7424AB25A50089167B /* Column.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7224AB25A50089167B /* Column.hpp */; };
+		1F733D7424AB25A50089167B /* Column.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7224AB25A50089167B /* Column.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F733D7724AB25C00089167B /* Statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D7524AB25C00089167B /* Statement.cpp */; };
-		1F733D7824AB25C00089167B /* Statement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7624AB25C00089167B /* Statement.hpp */; };
+		1F733D7824AB25C00089167B /* Statement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7624AB25C00089167B /* Statement.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F733D7B24AB25D30089167B /* Transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D7924AB25D30089167B /* Transaction.cpp */; };
-		1F733D7C24AB25D30089167B /* Transaction.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7A24AB25D30089167B /* Transaction.hpp */; };
+		1F733D7C24AB25D30089167B /* Transaction.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7A24AB25D30089167B /* Transaction.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F733D7F24AB25EC0089167B /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F733D7D24AB25EC0089167B /* Database.cpp */; };
-		1F733D8024AB25EC0089167B /* Database.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7E24AB25EC0089167B /* Database.hpp */; };
-		1F733D8824AB26210089167B /* VariadicBind.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D8624AB26210089167B /* VariadicBind.hpp */; };
+		1F733D8024AB25EC0089167B /* Database.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D7E24AB25EC0089167B /* Database.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F733D8824AB26210089167B /* VariadicBind.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F733D8624AB26210089167B /* VariadicBind.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		414CE0A52763249600A6176D /* Backup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 414CE0A32763249600A6176D /* Backup.cpp */; };
+		414CE0A62763249600A6176D /* Backup.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 414CE0A42763249600A6176D /* Backup.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		414CE0AB276325FB00A6176D /* example.db3 in Resources */ = {isa = PBXBuildFile; fileRef = 414CE0A9276325FB00A6176D /* example.db3 */; };
+		414CE0AC276325FB00A6176D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 414CE0AA276325FB00A6176D /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 /* Begin PBXFileReference section */
 		1F733D4424AB1CCE0089167B /* SQLiteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLiteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F733D4C24AB1CCE0089167B /* SQLiteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F733D5124AB1CCE0089167B /* SQLiteKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteKitTests.m; sourceTree = "<group>"; };
+		1F733D5124AB1CCE0089167B /* SQLiteKitTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SQLiteKitTests.mm; sourceTree = "<group>"; };
 		1F733D5324AB1CCE0089167B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F733D5D24AB1D390089167B /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		1F733D5E24AB1D390089167B /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
@@ -58,6 +62,10 @@
 		1F733D7D24AB25EC0089167B /* Database.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
 		1F733D7E24AB25EC0089167B /* Database.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Database.hpp; sourceTree = "<group>"; };
 		1F733D8624AB26210089167B /* VariadicBind.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VariadicBind.hpp; sourceTree = "<group>"; };
+		414CE0A32763249600A6176D /* Backup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Backup.cpp; sourceTree = "<group>"; };
+		414CE0A42763249600A6176D /* Backup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Backup.hpp; sourceTree = "<group>"; };
+		414CE0A9276325FB00A6176D /* example.db3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.db3; sourceTree = "<group>"; };
+		414CE0AA276325FB00A6176D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				1F733D6624AB1DB60089167B /* SQLiteKit.h */,
+				1F733D6E24AB23270089167B /* Assertion.hpp */,
 				1F733D6124AB1D8A0089167B /* Exception.cpp */,
 				1F733D6224AB1D8A0089167B /* Exception.hpp */,
 				1F733D6A24AB218C0089167B /* NullPtr.hpp */,
-				1F733D6E24AB23270089167B /* Assertion.hpp */,
 				1F733D7524AB25C00089167B /* Statement.cpp */,
 				1F733D7624AB25C00089167B /* Statement.hpp */,
 				1F733D7124AB25A50089167B /* Column.cpp */,
@@ -113,6 +121,8 @@
 				1F733D7A24AB25D30089167B /* Transaction.hpp */,
 				1F733D7D24AB25EC0089167B /* Database.cpp */,
 				1F733D7E24AB25EC0089167B /* Database.hpp */,
+				414CE0A32763249600A6176D /* Backup.cpp */,
+				414CE0A42763249600A6176D /* Backup.hpp */,
 				1F733D8624AB26210089167B /* VariadicBind.hpp */,
 				1F733D5B24AB1D390089167B /* Internal */,
 			);
@@ -122,7 +132,9 @@
 		1F733D5024AB1CCE0089167B /* SQLiteKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F733D5124AB1CCE0089167B /* SQLiteKitTests.m */,
+				414CE0A9276325FB00A6176D /* example.db3 */,
+				414CE0AA276325FB00A6176D /* logo.png */,
+				1F733D5124AB1CCE0089167B /* SQLiteKitTests.mm */,
 				1F733D5324AB1CCE0089167B /* Info.plist */,
 			);
 			path = SQLiteKitTests;
@@ -158,6 +170,7 @@
 				1F733D6C24AB218C0089167B /* NullPtr.hpp in Headers */,
 				1F733D7C24AB25D30089167B /* Transaction.hpp in Headers */,
 				1F733D7824AB25C00089167B /* Statement.hpp in Headers */,
+				414CE0A62763249600A6176D /* Backup.hpp in Headers */,
 				1F733D6824AB1DB60089167B /* SQLiteKit.h in Headers */,
 				1F733D7424AB25A50089167B /* Column.hpp in Headers */,
 				1F733D8824AB26210089167B /* VariadicBind.hpp in Headers */,
@@ -252,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414CE0AC276325FB00A6176D /* logo.png in Resources */,
+				414CE0AB276325FB00A6176D /* example.db3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F733D7324AB25A50089167B /* Column.cpp in Sources */,
+				414CE0A52763249600A6176D /* Backup.cpp in Sources */,
 				1F733D5F24AB1D390089167B /* sqlite3.c in Sources */,
 				1F733D7B24AB25D30089167B /* Transaction.cpp in Sources */,
 				1F733D6324AB1D8A0089167B /* Exception.cpp in Sources */,
@@ -275,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F733D5224AB1CCE0089167B /* SQLiteKitTests.m in Sources */,
+				1F733D5224AB1CCE0089167B /* SQLiteKitTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

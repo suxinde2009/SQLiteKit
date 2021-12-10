@@ -24,7 +24,7 @@ FOUNDATION_EXPORT const unsigned char SQLiteKitVersionString[];
 #include "Transaction.hpp"
 #include "Database.hpp"
 #include "VariadicBind.hpp"
-
+#include "VariadicBind.hpp"
 
 /**
  * @brief Version numbers for SQLiteKit are provided in the same way as sqlite3.h
@@ -44,5 +44,5 @@ FOUNDATION_EXPORT const unsigned char SQLiteKitVersionString[];
  * #define SQLITE_SOURCE_ID      "2017-08-24 16:21:36 8d3a7ea6c5690d6b7c3767558f4f01b511c55463e3f9e64506801fe9b74dce34"
  *
  */
-#define SQLITE_KIT_VERSION           "2.02.00"   // 2.2.0
-#define SQLITE_KIT_VERSION_NUMBER     2002000    // 2.2.0
+#define SQLITE_KIT_VERSION           "3.20.1"
+#define SQLITE_KIT_VERSION_NUMBER     3020001
